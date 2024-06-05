@@ -1,0 +1,15 @@
+<!-- item-list.component.html -->
+<div *ngIf="items">
+    <h2 class="page-title">Items</h2>
+    <ul class="item-list">
+      <li *ngFor="let item of items" class="item-card" (click)="navigateToItemDetail(item.id)">
+        <div class="item-info">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <p>Category: {{ item.category }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+ 
